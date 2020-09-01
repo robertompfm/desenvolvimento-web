@@ -1,0 +1,5 @@
+package com.robertompfm.service;
+
+public class ClientManager {
+
+}

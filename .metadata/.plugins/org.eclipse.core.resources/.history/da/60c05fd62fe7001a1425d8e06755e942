@@ -1,0 +1,5 @@
+package com.robertompfm.notification;
+
+public interface Notification {
+
+}

@@ -1,0 +1,23 @@
+package com.robertompfm.service;
+
+
+import java.util.List;
+
+import com.robertompfm.model.Client;
+
+public class ClientManagement {
+
+	private List<Client> clients;
+	
+	public void save(Client client) {
+		this.clients.add(client);
+	}
+	
+	public void remove(String cpf) {
+		
+	}
+	
+	public List<Client> getClients() {
+		return this.clients;
+	}
+}

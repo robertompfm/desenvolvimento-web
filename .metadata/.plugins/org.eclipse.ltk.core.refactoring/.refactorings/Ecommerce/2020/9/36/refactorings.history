@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.robertompfm.service.ClientManager&apos; to &apos;ClientManagement&apos;&#x0A;- Original project: &apos;Ecommerce&apos;&#x0A;- Original element: &apos;com.robertompfm.service.ClientManager&apos;&#x0A;- Renamed element: &apos;com.robertompfm.service.ClientManagement&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ClientManager&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.robertompfm.service{ClientManager.java[ClientManager" matchStrategy="1" name="ClientManagement" qualified="false" references="true" similarDeclarations="false" stamp="1598999431029" textual="false" version="1.0"/>
+</session>

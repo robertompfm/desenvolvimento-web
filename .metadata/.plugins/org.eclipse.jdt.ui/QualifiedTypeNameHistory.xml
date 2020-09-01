@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.robertompfm.model.Client"/>
+<fullyQualifiedTypeName name="com.robertompfm.notification.Notification"/>
+<fullyQualifiedTypeName name="com.robertompfm.notification.EmailNotification"/>
+<fullyQualifiedTypeName name="com.robertompfm.service.ClientServiceActivation"/>
+</qualifiedTypeNameHistroy>
