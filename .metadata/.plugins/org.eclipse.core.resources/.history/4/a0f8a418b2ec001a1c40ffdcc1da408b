@@ -6,7 +6,7 @@ import com.robertompfm.notification.Notification;
 import com.robertompfm.service.ClientManagement;
 import com.robertompfm.service.ClientManager;
 import com.robertompfm.service.ClientServiceActivation;
-import com.robertompfm.service.ClientNotFoundException;
+import com.robertompfm.service.NoClientException;
 
 public class Main {
 	
@@ -29,7 +29,7 @@ public class Main {
 		});
 		try {
 			System.out.println(manager.searchClient("111-222-333-44").getName());
-		} catch (ClientNotFoundException e) {
+		} catch (NoClientException e) {
 			System.out.println(e.getMessage());
 		}
 		
@@ -37,7 +37,7 @@ public class Main {
 		try {
 			System.out.println(manager.searchClient("333-44"));
 			
-		} catch (ClientNotFoundException e) {
+		} catch (NoClientException e) {
 			System.out.println(e.getMessage());
 		}
 

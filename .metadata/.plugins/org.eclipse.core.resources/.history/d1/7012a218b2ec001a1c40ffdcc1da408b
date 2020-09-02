@@ -12,6 +12,6 @@ public interface ClientManager {
 	
 	public List<Client> getClients();
 
-	Client searchClient(String cpf) throws ClientNotFoundException;
+	Client searchClient(String cpf) throws NoClientException;
 
 }

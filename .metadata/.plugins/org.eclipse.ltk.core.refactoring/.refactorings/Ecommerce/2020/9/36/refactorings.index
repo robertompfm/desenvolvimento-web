@@ -1,1 +1,3 @@
 1598999431029	Rename type 'ClientManager'
+1599005302026	Rename local variable 'filteredList'
+1599006025090	Rename type 'NoClientException'

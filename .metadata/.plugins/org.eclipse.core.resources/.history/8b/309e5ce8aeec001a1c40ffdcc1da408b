@@ -1,0 +1,9 @@
+package com.robertompfm.service;
+
+public class NoClientException extends Exception {
+	private static final long serialVersionUID = 1l;
+	
+	public NoClientException(String msg) {
+		super(msg);
+	}
+}

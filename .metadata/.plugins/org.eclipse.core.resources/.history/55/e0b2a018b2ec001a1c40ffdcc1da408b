@@ -34,13 +34,13 @@ public class ClientManagement implements ClientManager {
 
 
 	@Override
-	public Client searchClient(String cpf) throws ClientNotFoundException {
+	public Client searchClient(String cpf) throws NoClientException {
 		try {
 			Client filteredClient;
 			filteredClient = this.clients.stream().filter(c -> c.getCpf().equals(cpf)).findFirst().get();
 			return filteredClient;
 		} catch (NoSuchElementException e) {
-			throw new ClientNotFoundException("Não existe cliente com o CPF: " + cpf);
+			throw new NoClientException("Não existe cliente com o CPF: " + cpf);
 		}
 	}
 	

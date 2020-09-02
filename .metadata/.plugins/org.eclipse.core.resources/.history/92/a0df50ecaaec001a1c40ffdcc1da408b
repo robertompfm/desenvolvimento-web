@@ -3,7 +3,6 @@ package com.robertompfm.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 import com.robertompfm.model.Client;
 
@@ -11,7 +10,7 @@ public class ClientManagement implements ClientManager {
 
 	private List<Client> clients;
 	
-	public ClientManagement() {
+	public public ClientManagement() {
 		this.clients = new ArrayList<Client>();
 		// TODO Auto-generated constructor stub
 	}
@@ -31,17 +30,4 @@ public class ClientManagement implements ClientManager {
 	public List<Client> getClients() {
 		return this.clients;
 	}
-
-
-	@Override
-	public Client searchClient(String cpf) throws ClientNotFoundException {
-		try {
-			Client filteredClient;
-			filteredClient = this.clients.stream().filter(c -> c.getCpf().equals(cpf)).findFirst().get();
-			return filteredClient;
-		} catch (NoSuchElementException e) {
-			throw new ClientNotFoundException("Não existe cliente com o CPF: " + cpf);
-		}
-	}
-	
 }
